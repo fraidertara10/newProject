@@ -1,0 +1,115 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    float: left;
+    margin-right: 50px; 
+}
+
+.logo img {
+    margin-bottom: 20px;
+    height: 100px; 
+    width: 100px;
+}
+.botones-sesion {
+    float: right;
+    margin-top: 0; 
+    margin-bottom: 100; 
+}
+
+.boton {
+    background-color: #0011ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    background-color: rgb(17, 0, 255);
+    border: 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+section.productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+article.producto {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h2 {
+    border-radius: 30px;
+    background-color: #0004ff; /* Cambia el color de fondo a azul (#007bff) */
+    padding: 10px 20px; /* Ajusta el espacio interno según sea necesario */
+}
+
+.footer-contacto, .footer-redes-sociales {
+    margin-bottom: 20px;
+}
+
+.icono-red-social {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icono-red-social img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icono-red-social img:hover {
+    background-color: #1900ff;
+}
