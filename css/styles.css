@@ -4,16 +4,21 @@ body {
     margin: 0;
     padding: 0;
 }
+h1{
+   
+    color: #fff;
+    font-size: 40px;
+}
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 .logo {
     float: left;
-    margin-right: 50px; 
+    margin-left: 50px;
 }
 
 .logo img {
@@ -22,18 +27,22 @@ header {
     width: 100px;
 }
 .botones-sesion {
+  
     float: right;
     margin-top: 0; 
-    margin-bottom: 100; 
+    margin-bottom: 100px; 
+    transition: all .3s ;
+    margin-right: 40px;
 }
 
 .boton {
-    background-color: #0011ff;
+    background-color: #7073a0;
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
-    margin-left: 20px; 
+    margin-bottom: 50px;
+
 }
 
 nav ul {
@@ -45,18 +54,23 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    justify-content: center;
+    
+
+}
+nav ul li:hover  {
+    background-color: rgb(100, 96, 151);
+    border: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all .4s;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
 }
-nav a:hover{
-    background-color: rgb(17, 0, 255);
-    border: 2px;
-    border-radius: 5px;
-    padding: 5px;
-}
+
 
 
 section.productos {
@@ -65,20 +79,22 @@ section.productos {
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
+    width: 100%;
 }
 
 article.producto {
     width: 300px;
-    margin: 20px;
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
+    margin: 10px 30px;
+  
+
 }
 
 
 
 
-/* Estilos para el pie de página */
 footer {
     background-color: #333;
     color: #fff;
@@ -88,8 +104,9 @@ footer {
 
 footer h2 {
     border-radius: 30px;
-    background-color: #0004ff; /* Cambia el color de fondo a azul (#007bff) */
-    padding: 10px 20px; /* Ajusta el espacio interno según sea necesario */
+    background-color: #7073a0; 
+    padding: 10px 20px; 
+    margin: 0 30%;
 }
 
 .footer-contacto, .footer-redes-sociales {
@@ -108,8 +125,9 @@ footer h2 {
     background-color: #ffffff;
     padding: 5px;
     transition: background-color 0.3s ease;
+    margin: 20px 0;
 }
 
 .icono-red-social img:hover {
-    background-color: #1900ff;
+    background-color: #6b6791;
 }
