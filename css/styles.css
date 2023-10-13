@@ -91,7 +91,9 @@ article.producto {
   
 
 }
-
+.producto img{
+    width: 100%;
+}
 
 
 
