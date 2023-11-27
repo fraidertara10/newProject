@@ -1,18 +1,37 @@
-<!-- login.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="css/styles.css">
+   
     <style>
-        body {
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #volver{
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            
+        }
+        h1{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: black;
+            background-color: #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh; /* Aprovecha el 100% de la altura visible del viewport */
+            height: 100vh; 
             margin: 0;
         }
 
@@ -24,7 +43,7 @@
         }
 
         .formulario {
-            width: 300px; /* Ajusta el ancho según sea necesario */
+            width: 300px; 
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 8px;
@@ -59,22 +78,27 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Iniciar Sesión</h1>
-    </header>
-
-    <section class="formulario">
-      
-        <form onsubmit="return validarFormulario()">
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario"  autofocus>
-
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" >
-
-            <button type="submit">Iniciar Sesión</button>
-        </form>
-    </section>
+   
+    <a href="index.html" id="volver">volver a la pagina principal </a>
+    <div class="container">
+        <header>
+            <h1>Iniciar Sesión</h1>
+        </header>
+    
+        <section class="formulario">
+          
+            <form onsubmit="return validarFormulario()">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario"  autofocus>
+    
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" >
+    
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+    </div>
+   
     <script>
         function validarFormulario() {
             var usuario = document.getElementById("usuario").value;
@@ -82,12 +106,10 @@
 
             if (usuario.trim() === "" || contrasena.trim() === "") {
                 alert("Por favor, complete todos los campos.");
-                return false; 
-            }
-
-            
-
-            return true; 
+            }else if(contrasena.length<8){
+                alert("la contraseña tiene que tener mas de 8 digitos ")
+            } 
+           
         }
     </script>
 
